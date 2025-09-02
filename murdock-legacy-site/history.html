@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Murdock Legacy — History</title>
+  <meta name="description" content="Murdock family history: recorded lessons and curated videos.">
+  <link rel="icon" href="images/favicon.svg">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Murdock Legacy Home">
+        <img src="images/logo.svg" alt="" class="logo" width="32" height="32">
+        <span>Murdock Legacy</span>
+      </a>
+      <nav aria-label="Primary">
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="photos.html">Photos</a></li>
+          <li><a class="active" href="history.html">History</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Family History</h1>
+    <p>Here we collect our recorded family history lessons and related videos. Add your YouTube links to <code>data/videos.json</code> and they’ll appear below.</p>
+
+    <div id="videos" class="videos"></div>
+
+    <h2>Records & Documents</h2>
+    <ul class="doc-list" id="records">
+      <li><a href="#" target="_blank" rel="noopener">Add links to digitized records here</a></li>
+    </ul>
+    <p class="small muted">Tip: store PDFs in the repo (e.g., <code>docs/</code> folder) or link to Google Drive/Dropbox share links.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <small>© <span id="year"></span> Murdock Legacy</small>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

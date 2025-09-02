@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Murdock Legacy — Photos</title>
+  <meta name="description" content="Photo gallery from the last Murdock Family Reunion.">
+  <link rel="icon" href="images/favicon.svg">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Murdock Legacy Home">
+        <img src="images/logo.svg" alt="" class="logo" width="32" height="32">
+        <span>Murdock Legacy</span>
+      </a>
+      <nav aria-label="Primary">
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="photos.html">Photos</a></li>
+          <li><a href="history.html">History</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Photos — Last Reunion</h1>
+    <p class="muted">Drop your images into <code>images/last-reunion/</code> and list them in <code>data/photos.json</code>. Captions & credits are supported.</p>
+
+    <div id="gallery" class="gallery" aria-live="polite"></div>
+  </main>
+
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Close">&times;</button>
+    <img id="lightbox-img" alt="">
+    <p id="lightbox-cap" class="caption"></p>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <small>© <span id="year"></span> Murdock Legacy</small>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

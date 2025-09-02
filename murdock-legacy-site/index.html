@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Murdock Legacy — Family Reunion</title>
+  <meta name="description" content="Official website of the Murdock Family Reunion. Event details, photos, and family history.">
+  <link rel="icon" href="images/favicon.svg">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Murdock Legacy Home">
+        <img src="images/logo.svg" alt="" class="logo" width="32" height="32">
+        <span>Murdock Legacy</span>
+      </a>
+      <nav aria-label="Primary">
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="photos.html">Photos</a></li>
+          <li><a href="history.html">History</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <h1>Family Reunion</h1>
+      <p>Where roots run deep and branches grow strong.</p>
+      <div class="cards two">
+        <article class="card">
+          <h2 class="eyebrow">Next Reunion</h2>
+          <h3 id="reunion-title">Murdock Family Reunion — <span class="accent">TBD</span></h3>
+          <ul class="details" id="reunion-details">
+            <li><strong>Date:</strong> <span data-bind="date">TBD</span></li>
+            <li><strong>Location:</strong> <span data-bind="location">TBD</span></li>
+            <li><strong>Theme:</strong> <span data-bind="theme">TBD</span></li>
+          </ul>
+          <div class="cta-row">
+            <a class="button" id="rsvp-link" href="#" target="_blank" rel="noopener">RSVP</a>
+            <a class="button ghost" id="add-calendar" href="#" download>Add to Calendar (.ics)</a>
+          </div>
+          <p class="muted small">Update <code>data/reunion.json</code> to set these details.</p>
+        </article>
+
+        <article class="card">
+          <h2 class="eyebrow">Plan Your Trip</h2>
+          <ul class="bullets">
+            <li><strong>Schedule:</strong> Meet & Greet, Picnic, Worship, Farewell</li>
+            <li><strong>Lodging:</strong> Family-rate hotel block (TBD)</li>
+            <li><strong>What to bring:</strong> T‑shirts, lawn chairs, family recipes</li>
+          </ul>
+          <p class="small muted">Add or customize details in <code>index.html</code>.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+    <section>
+      <h2>About the Reunion</h2>
+      <p>Our reunion brings together generations to celebrate our history, honor our elders, and invest in our future. This website hosts official details, photos from our last gathering, and a growing archive of Murdock family stories.</p>
+    </section>
+
+    <section class="cta-band">
+      <div class="cta-content">
+        <h3>See highlights from the last reunion</h3>
+        <a class="button" href="photos.html">View Photos</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Questions?</h2>
+      <p>Email: <a href="mailto:info@murdocklegacy.com">info@murdocklegacy.com</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <small>© <span id="year"></span> Murdock Legacy • Built with love by the family</small>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+/* Murdock Legacy — minimal, elegant styles */
+:root{
+  --bg:#0b0e14;
+  --panel:#101624;
+  --card:#131a2a;
+  --border:#1f2a3d;
+  --text:#e6edf3;
+  --muted:#9fb0c0;
+  --accent:#48b0ff;
+  --accent-ink:#001926;
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,Apple Color Emoji,Segoe UI Emoji;line-height:1.6;background:var(--bg);color:var(--text)}
+
+.container{max-width:1100px;margin:0 auto;padding:24px}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+
+.site-header{background:var(--panel);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:10}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.2px;color:var(--text)}
+.logo{display:block}
+.menu{display:flex;list-style:none;margin:0;padding:0;gap:12px}
+.menu a{color:var(--text);opacity:.9}
+.menu a.active{color:var(--accent)}
+
+.hero{background:linear-gradient(180deg,var(--panel),transparent)}
+.hero-inner{padding:56px 24px 24px}
+.hero h1{font-size:40px;margin:0 0 6px}
+.hero p{margin:0 0 22px;color:var(--muted)}
+.cards{display:grid;gap:16px}
+.cards.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:18px}
+.eyebrow{text-transform:uppercase;font-size:12px;letter-spacing:.2em;color:var(--muted);margin:0 0 4px}
+.details{padding-left:18px;margin:8px 0}
+.cta-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+.button{display:inline-block;border-radius:12px;padding:10px 16px;background:var(--accent);color:var(--accent-ink);font-weight:700;border:1px solid transparent}
+.button.ghost{background:transparent;color:var(--text);border-color:var(--border)}
+
+.cta-band{background:var(--panel);border:1px solid var(--border);border-radius:16px;margin:28px 0}
+.cta-content{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:18px}
+.muted{color:var(--muted)}
+.small{font-size:12px}
+
+.site-footer{border-top:1px solid var(--border);margin-top:28px}
+.footer-inner{display:flex;align-items:center;justify-content:center;padding:18px}
+
+.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:16px 0 24px}
+.gallery figure{margin:0;background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden}
+.gallery img{display:block;width:100%;height:220px;object-fit:cover}
+.gallery figcaption{padding:8px 10px;color:var(--muted);font-size:12px}
+
+.lightbox{position:fixed;inset:0;background:rgba(0,0,0,.85);display:none;align-items:center;justify-content:center;padding:24px}
+.lightbox.open{display:flex}
+.lightbox img{max-width:95vw;max-height:75vh;border-radius:12px;border:1px solid var(--border)}
+.lightbox .caption{color:#fff;margin-top:10px;text-align:center}
+.lightbox-close{position:absolute;top:16px;right:16px;background:transparent;border:1px solid #fff;color:#fff;border-radius:50%;width:40px;height:40px;font-size:22px;cursor:pointer}
+
+.videos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:16px 0 24px}
+.videos .video{background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden}
+.videos .video iframe{width:100%;aspect-ratio:16/9;border:0}
+.videos .video .meta{padding:10px}
+.videos .video .meta h3{margin:0 0 6px;font-size:16px}
+.videos .video .meta p{margin:0;color:var(--muted);font-size:13px}
+
+.doc-list{padding-left:18px}
+code{background:#0f1725;border:1px solid var(--border);padding:1px 4px;border-radius:6px}
+
+@media (max-width:900px){
+  .cards.two{grid-template-columns:1fr}
+  .gallery{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .videos{grid-template-columns:1fr}
+  .hero h1{font-size:32px}
+}
