@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Murdock Legacy — Bring a Dish</title>
+  <meta name="description" content="Sign up to bring a side dish for the Murdock Family Reunion and see what everyone is bringing.">
+  <link rel="icon" href="images/favicon.svg">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <img src="images/logo.svg" alt="" class="logo" width="32" height="32">
+        <span>Murdock Legacy</span>
+      </a>
+      <nav aria-label="Primary">
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="photos.html">Photos</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="shirts.html">T-Shirts</a></li>
+          <li><a class="active" href="dishes.html">Bring a Dish</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Bring a Dish — Signup & Live List</h1>
+    <p>Step 1: Fill out the form. Step 2: Check the live list below to avoid duplicates (e.g., too many macaroni & cheese).</p>
+
+    <!-- ========== Signup Form (Google Form embed) ========== -->
+    <section class="card form-card">
+      <h2 class="eyebrow">Signup</h2>
+      <iframe class="form-frame"
+              src="DISH_FORM_EMBED"
+              frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      <p class="small muted">If the form doesn’t load, open it <a href="DISH_FORM_DIRECT" target="_blank" rel="noopener">here</a>.</p>
+    </section>
+
+    <!-- ========== Live List (Published Google Sheet) ========== -->
+    <section class="card form-card">
+      <h2 class="eyebrow">Live List</h2>
+      <p class="small muted">This list updates automatically as signups come in.</p>
+      <iframe class="sheet-frame" src="SHEET_PUBLISH_URL" loading="lazy"></iframe>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <small>© <span id="year"></span> Murdock Legacy</small>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
