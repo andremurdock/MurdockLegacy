@@ -31,24 +31,29 @@
     <h1>Bring a Dish — Signup & Live List</h1>
     <p>Step 1: Fill out the form. Step 2: Check the live list below to avoid duplicates (e.g., too many macaroni & cheese).</p>
 
-    <!-- ========== Signup Form (Google Form embed) ========== -->
-    <section class="card form-card">
-      <h2 class="eyebrow">Signup</h2>
-      <iframe class="form-frame"
-              src="https://docs.google.com/forms/d/e/1FAIpQLSckmtbUrjApZnANpVAnMIS2bjoLjMzS5yADSU3qkLOMjS2gRg/viewform?usp=header"
-              frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-      <p class="small muted">If the form doesn’t load, open it <a href="https://docs.google.com/forms/d/e/1FAIpQLSckmtbUrjApZnANpVAnMIS2bjoLjMzS5yADSU3qkLOMjS2gRg/viewform?usp=header" target="_blank" rel="noopener">here</a>.</p>
-    </section>
+<!-- Signup Form -->
+<section class="card form-card">
+  <h2 class="eyebrow">Signup</h2>
+  <iframe class="form-frame"
+          src="https://docs.google.com/forms/d/e/1FAIpQLSckmtbUrjApZnANpVAnMIS2bjoLjMzS5yADSU3qkLOMjS2gRg/viewform?embedded=true"
+          frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  <p class="small muted">
+    If the form doesn’t load, open it
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSckmtbUrjApZnANpVAnMIS2bjoLjMzS5yADSU3qkLOMjS2gRg/viewform"
+       target="_blank" rel="noopener">here</a>.
+  </p>
+</section>
 
-    <!-- ========== Live List (Published Google ) ========== -->
-    <section class="card form-card">
-      <h2 class="eyebrow">Live List</h2>
-      <p class="small muted">This list updates automatically as signups come in.</p>
-      <!--<iframe class="sheet-frame" src="SHEET_PUBLISH_URL" loading="lazy"></iframe>-->
-      <iframe class="sheet-frame" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSfNJ4k57uQAHkGm93Z_YMRg2I4SDW_goza9puib951XTY6ham9YxVcprSPwxPhZ-s6xPLZ3Sw6ym7w/pubhtml?gid=33275345&single=true" loading="lazy"></iframe>
-      
+<!-- Live List (Published Sheet) -->
+<section class="card form-card">
+  <h2 class="eyebrow">Live List</h2>
+  <p class="small muted">This list updates automatically as signups come in.</p>
+  <iframe class="sheet-frame"
+          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSfNJ4k57uQAHkGm93Z_YMRg2I4SDW_goza9puib951XTY6ham9YxVcprSPwxPhZ-s6xPLZ3Sw6ym7w/pubhtml?gid=33275345&single=true&widget=true&headers=false"
+          loading="lazy"></iframe>
+</section>
 
-          </section>
+    
   </main>
 
   <footer class="site-footer">
