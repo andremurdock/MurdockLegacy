@@ -2,7 +2,7 @@
   {
     "src": "images/Family Picture.JPG",
     "alt": "Family group at the park",
-    "caption": "Family group photo"
+    "caption": "2025 Family Cookout"
   },
   {
     "src": "images/Cake.jpg",
@@ -13,5 +13,21 @@
     "src": "images/Snowballs.jpg",
     "alt": "Snowballs for the kids",
     "caption": "Cant have cookout without snowballs"
+  }
+
+  {
+    "src": "images/Family 2022.JPG",
+    "alt": "2022 Family Cookout",
+    "caption": "2022 Family Cookout"
+  }
+  {
+    "src": "images//Family 2023.jpeg",
+    "alt": "2023 Family Cookout",
+    "caption": "2023 Family Cookout"
+  }
+  {
+    "src": "images/Family 2024.jpeg",
+    "alt": "2024 Family Cookout",
+    "caption": "2024 Family Cookout"
   }
 ]
