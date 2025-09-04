@@ -1,1 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Murdock Legacy — T-Shirt Orders</title>
+  <meta name="description" content="Order Murdock Family Reunion T-shirts for your household.">
+  <link rel="icon" href="images/favicon.svg">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <img src="images/logo.svg" alt="" class="logo" width="32" height="32">
+        <span>Murdock Legacy</span>
+      </a>
+      <nav aria-label="Primary">
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="photos.html">Photos</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a class="active" href="shirts.html">T-Shirts</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Family T-Shirt Orders</h1>
+    <p>Use the form below to submit your household’s T-shirt order. One submission per family/household is perfect.</p>
+
+    <!-- ========== Option A: Google Form (RECOMMENDED) ========== -->
+    <!-- Replace FORM_URL_EMBED and FORM_URL_DIRECT with your actual Google Form URLs -->
+    <section class="card form-card">
+      <h2 class="eyebrow">Primary</h2>
+      <h3>Google Form</h3>
+      <iframe class="form-frame"
+              src="FORM_URL_EMBED"
+              frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      <p class="small muted">
+        If the form doesn’t load, open it
+        <a href="FORM_URL_DIRECT" target="_blank" rel="noopener">here</a>.
+      </p>
+    </section>
+
+    <!-- ========== Option B: Email fallback (no Google Form) ========== -->
+    <!-- If you don’t want this, you can keep it as a backup or remove this whole section. -->
+    <section class="card">
+      <h2 class="eyebrow">Backup</h2>
+      <h3>Email Order (no login needed)</h3>
+      <form id="shirtForm" class="contact">
+        <label>Full name
+          <input type="text" name="name" required>
+        </label>
+        <label>Phone
+          <input type="tel" name="phone" required>
+        </label>
+        <label>Email (optional)
+          <input type="email" name="email">
+        </label>
+
+        <h4>Household sizes (enter quantities)</h4>
+        <div class="size-grid">
+          <label>YS <input type="number" name="YS" min="0" value="0"></label>
+          <label>YM <input type="number" name="YM" min="0" value="0"></label>
+          <label>YL <input type="number" name="YL" min="0" value="0"></label>
+          <label>S  <input type="number" name="S"  min="0" value="0"></label>
+          <label>M  <input type="number" name="M"  min="0" value="0"></label>
+          <label>L  <input type="number" name="L"  min="0" value="0"></label>
+          <label>XL <input type="number" name="XL" min="0" value="0"></label>
+          <label>2XL<input type="number" name="2XL" min="0" value="0"></label>
+          <label>3XL<input type="number" name="3XL" min="0" value="0"></label>
+        </div>
+
+        <label>Notes (color, child/adult names, pickup, etc.)
+          <textarea name="notes" rows="4"></textarea>
+        </label>
+
+        <button class="button" type="submit">Email My Order</button>
+        <p class="small muted">This opens your email app with the order pre-filled. Send it to us to confirm.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <small>© <span id="year"></span> Murdock Legacy</small>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
 
